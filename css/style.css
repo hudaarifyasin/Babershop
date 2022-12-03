@@ -149,8 +149,9 @@ button { cursor: pointer; }
 .navbar ul li{ 
   margin: .65rem;
 }
-
-
+.mob-logo{
+  display: none;
+}
 .bg-dot:hover{
   background-image: url(./bg-dot.svg);
   background-position: center;
@@ -297,7 +298,7 @@ backdrop-filter: blur(5px);
   color: var(--fontcolor-border-grey);
   box-shadow: 0 4px 1.875rem rgba(0, 0, 0, 4);
   border-radius: 2px;
-  padding: 1rem;
+  padding: 0 1rem;
   transition: var(--transition-2);
 }
 .filter-btn:focus{
@@ -808,6 +809,9 @@ p{
     .grid-list3{
       grid-template-columns: auto auto;
     }
+    .filter-btn{
+      padding: 0 1rem;
+    }
  /* ============================== */
                /* APPOINTMENT */
     /* ============================= */
@@ -831,7 +835,144 @@ p{
     .message{
       width: 40rem;
     }
-    
+  
+  }
+  @media(max-width: 390px){
+    body{
+      width: 20rem;
+      margin: auto;
+     text-align: center;
+    }
+    .collapse{
+      display: none;
+    }
+   /* ============================== */
+              /* SHAPES  */
+   /* ============================= */
+  
+   .scale{
+     border: none;
+   }
+ .shape{
+   display: none;
+ }
+ .shape1{
+   display: none;
+ }
+ .shape2{
+   display: none;
+ }
+ .box{
+   display: none;
+ }
+ .box1{
+   display: none;
+ }
+ .box3{
+   display: none;
+ }
+ .sqr{
+   display: none;
+ }
+ .sqr1{
+   display: none;
+ }
+ .sqr2{
+   display: none;
+ }
+ .top-sqr1{
+   display: none;
+ }
+ .top-sqr2{
+   display: none;
+ }
+    /* ============================== */
+              /* HOME */
+   /* ============================= */  
+.mob-logo{
+ display: block;
+ margin-top: 3rem ;
+}
+.navbar{ 
+ display: none;
+}
+.collapse{
+  display: none;
+}
+.hero-img{
+ width: 30rem;
+ z-index: -1;
+ position: relative;
+ margin-right: 24rem;
+}
+.col2{
+ margin-top: 5rem;
+margin-left: 5rem;
+ position: absolute;
+}
+.text1{
+ width: none;  
+ margin-bottom: 0rem; 
+ margin-right: 4rem;
+ line-height: 1rem;
+}
+  /* ============================== */
+              /* SERVICE */
+   /* ============================= */
+
+.grid-list{
+ grid-template-columns: auto;
+}
+
+.serv-mob{
+  margin-left: 5rem;
+}
+
+.grid-list2{
+  grid-template-columns: auto;
+}
+.tab-filter{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* ============================== */
+              /* gallery */
+   /* ============================= */
+   .grid-list3{
+     grid-template-columns: auto;
+   }
+/* ============================== */
+              /* APPOINTMENT */
+   /* ============================= */
+   .form-btn {
+     margin-left:8rem;
+   }
+  
+   .span{
+     margin-left: 5rem;
+   }
+   hr{
+     display: none;
+   }
+   .message{
+     width: 19rem;
+   }
+
+   .findUs h3{
+    display: none;
+   }
+   iframe{
+    display: none;
+   }
+   .links{
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-left: 4rem;
+  }
+   .back-top-btn{
+    display: none;
+   }
   }
 
     
